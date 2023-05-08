@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Gestion de Budget |</title>
+</head>
+
+<body>
+    <div class="headerBar">
+        <header>
+            <h1 class="title">Mon suivi budgétaire</h1>
+            <h2 class="topbar">Votre solde actuel</h2>
+            <p>
+                <span class="balance"></span>
+                <span class="currency">.CFA</span>
+            </p>
+            <header>
+    </div>
+    <div class="content">
+        <h3 class="secondTitle">Ajouter une nouvelle opération : </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <span for="type">Type:</span>
+                    <select id="type">
+                        <option value="Choisissez-en">Choisissez-en un...</option>
+                        <option value="Revenus">Revenu</option>
+                        <option value="Dépenses">Dépenses</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <span for="name">Nom:</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formLine right">
+                    <span for="amount">Montant:</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave">Ajouter aux transactions</button>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

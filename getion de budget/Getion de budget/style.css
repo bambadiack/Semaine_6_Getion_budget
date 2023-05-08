@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .2s linear;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: black;
+}
+
+.headerBar {
+    position: fixed;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.topbar {
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+.balance {
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+.content {
+    width: 580px;
+    margin: 0 auto;
+    padding: 3%;
+    padding-left: 6%;
+}
+
+.secondTitle {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+@media screen and (max-width:634px) {
+    .secondTitle {
+        width: 323px;
+    }
+}
+
+.form {
+    /* width: 300px; */
+    padding: 5px;
+    padding-top: 20px;
+    padding-left: 10%;
+    justify-content: center;
+    background-color: bisque;
+}
+
+@media screen and (max-width:634px) {
+    .form {
+        width: 300px;
+    }
+}
+
+.formLine {
+    display: inline-flex;
+    padding: 5px 0px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-right: 100px;
+}
+
+input,
+select {
+    width: 130px;
+    margin-left: 10px;
+}
+
+
+/* table style */
+
+table {
+    width: 100%;
+}
+
+@media screen and (max-width:634px) {
+    table {
+        width: 370px;
+    }
+}
+
+thead {
+    background-color: orange;
+    color: white;
+    line-height: 30px;
+}
+
+tbody {
+    background-color: bisque;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* Button */
+
+button {
+    width: 200px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 20px;
+    background-color: orange;
+    border-radius: 5px;
+    margin: 14px 25%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:634px) {
+    button {
+        margin: 10%;
+    }
+}
+
+button:hover {
+    box-shadow: 0 0 0 2px grey;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
